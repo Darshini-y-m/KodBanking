@@ -1,0 +1,249 @@
+/* ============================= */
+/* FULL PAGE PASTEL BACKGROUND */
+/* ============================= */
+
+.auth-full {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================= */
+/* BIG BRAND TITLE */
+/* ============================= */
+
+.brand-title-large {
+  font-family: 'DM Serif Display', serif;
+  font-size: 6.5rem;        /* BIG like blue design */
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* ============================= */
+/* ANIMATED INTRO */
+/* ============================= */
+
+.animated-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-line1 {
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.intro-line2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.8rem;
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 1s;
+}
+
+.intro-line3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 2s;
+}
+
+/* ============================= */
+/* LOGIN + REGISTER CARD */
+/* ============================= */
+
+.auth-combined-card {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 6rem;
+  width: 1000px;   /* WEBSITE SCALE */
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(25px);
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.divider {
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+}
+
+/* ============================= */
+/* LOGIN + REGISTER SECTIONS */
+/* ============================= */
+
+.login-section,
+.register-section {
+  width: 350px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+.login-section input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+button {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* WELCOME SCREEN */
+/* ============================= */
+
+.welcome-screen {
+  height: 100vh;
+  background: linear-gradient(135deg, #fbcfe8, #c7d2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-big {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-gif {
+  width: 260px;
+  margin: 2rem 0;
+}
+
+.loading-text {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard-wrapper {
+  padding: 2rem 4rem;
+  background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+  min-height: 100vh;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ============================= */
+/* DASHBOARD HEADER */
+/* ============================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.topbar h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.topbar button {
+  padding: 10px 22px;
+  border-radius: 30px;
+}
+
+/* ============================= */
+/* BALANCE BUTTON */
+/* ============================= */
+
+.balance-card button {
+  padding: 10px 22px;
+  border-radius: 30px;
+}
+
+/* ============================= */
+/* ANIMATION */
+/* ============================= */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+/* ============================= */
+/* EXTRA SECTION GRID FIX */
+/* ============================= */
+
+.extra-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+.value {
+  font-weight: 500;
+}
+
+.value.active {
+  color: #10b981;
+  font-weight: 600;
+}
+.error-text {
+  color: #ef4444;
+  font-size: 0.9rem;
+}
