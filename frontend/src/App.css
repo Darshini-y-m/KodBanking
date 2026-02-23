@@ -12,14 +12,14 @@
 }
 
 /* ============================= */
-/* BIG BRAND TITLE */
+/* BRAND TITLE (Professional Size) */
 /* ============================= */
 
 .brand-title-large {
   font-family: 'DM Serif Display', serif;
-  font-size: 6.5rem;        /* BIG like blue design */
+  font-size: 3.2rem;   /* reduced from 6.5rem */
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* ============================= */
@@ -28,28 +28,28 @@
 
 .animated-intro {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .intro-line1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   opacity: 0;
   animation: fadeUp 1s forwards;
 }
 
 .intro-line2 {
   font-family: 'Sacramento', cursive;
-  font-size: 3.8rem;
+  font-size: 2rem;   /* reduced from 3.8rem */
   opacity: 0;
   animation: fadeUp 1s forwards;
   animation-delay: 1s;
 }
 
 .intro-line3 {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
   font-style: italic;
   opacity: 0;
   animation: fadeUp 1s forwards;
@@ -62,13 +62,13 @@
 
 .auth-combined-card {
   display: flex;
-  gap: 5rem;
-  padding: 5rem 6rem;
-  width: 1000px;   /* WEBSITE SCALE */
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(25px);
-  border-radius: 30px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  gap: 3rem;
+  padding: 2.5rem 3rem;   /* reduced */
+  width: 750px;           /* reduced from 1000px */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
 .divider {
@@ -82,11 +82,11 @@
 
 .login-section,
 .register-section {
-  width: 350px;
-  font-size: 1.3rem;
+  width: 280px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 /* ============================= */
@@ -95,10 +95,10 @@
 
 .login-section input {
   width: 100%;
-  padding: 20px;
-  border-radius: 16px;
+  padding: 12px;
+  border-radius: 12px;
   border: 1px solid #ddd;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 
 /* ============================= */
@@ -109,17 +109,17 @@ button {
   background: linear-gradient(135deg, #6366f1, #ec4899);
   color: white;
   border: none;
-  padding: 14px 32px;
-  border-radius: 40px;
+  padding: 10px 22px;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   transition: 0.3s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
 /* ============================= */
@@ -139,13 +139,13 @@ button:hover {
 }
 
 .welcome-big {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .welcome-gif {
-  width: 260px;
-  margin: 2rem 0;
+  width: 180px;
+  margin: 1.2rem 0;
 }
 
 .loading-text {
@@ -158,7 +158,7 @@ button:hover {
 /* ============================= */
 
 .dashboard-wrapper {
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
   min-height: 100vh;
 }
@@ -166,14 +166,14 @@ button:hover {
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .card {
-  background: rgba(255,255,255,0.85);
-  border-radius: 18px;
-  padding: 1.8rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 /* ============================= */
@@ -188,13 +188,13 @@ button:hover {
 }
 
 .topbar h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .topbar button {
-  padding: 10px 22px;
-  border-radius: 30px;
+  padding: 8px 18px;
+  border-radius: 20px;
 }
 
 /* ============================= */
@@ -202,18 +202,10 @@ button:hover {
 /* ============================= */
 
 .balance-card button {
-  padding: 10px 22px;
-  border-radius: 30px;
+  padding: 8px 18px;
+  border-radius: 20px;
 }
 
-/* ============================= */
-/* ANIMATION */
-/* ============================= */
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity: 1; transform: translateY(0);}
-}
 /* ============================= */
 /* EXTRA SECTION GRID FIX */
 /* ============================= */
@@ -222,8 +214,9 @@ button:hover {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
+
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -231,7 +224,7 @@ button:hover {
 }
 
 .label {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   opacity: 0.6;
 }
 
@@ -243,7 +236,17 @@ button:hover {
   color: #10b981;
   font-weight: 600;
 }
+
 .error-text {
   color: #ef4444;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* ============================= */
+/* ANIMATION */
+/* ============================= */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
 }
