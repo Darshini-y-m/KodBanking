@@ -24,7 +24,7 @@ export default function UserDashboard() {
   const [checkingAuth, setCheckingAuth] = useState(true);
 
   useEffect(() => {
-    fetch("/api/auth/verify", { credentials: "include" })
+    fetch(`${import.meta.env.VITE_API_URL}/api/auth/verify`, { credentials: "include" })
       .then((res) => {
         if (res.status === 401) navigate("/login");
         setCheckingAuth(false);
@@ -49,7 +49,7 @@ export default function UserDashboard() {
   const handleCheckBalance = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/balance", { credentials: "include" });
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/balance`, { credentials: "include" });
       const data = await res.json();
       if (!res.ok) return;
       setBalance(data.balance);

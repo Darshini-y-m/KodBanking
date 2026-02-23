@@ -17,7 +17,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/auth/login", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -47,7 +47,7 @@ export default function Login() {
       {/* INSTAGRAM STYLE ANIMATED INTRO */}
       <div className="animated-intro">
         <span className="intro-line1">Banking, but make it</span>
-        <span className="intro-line2">✨ aesthetic ✨</span>
+        <span className="intro-line2"> Easy </span>
         <span className="intro-line3">
           “We promise not to judge your midnight Amazon purchases.”
         </span>
@@ -92,7 +92,7 @@ export default function Login() {
 
         {/* REGISTER SECTION */}
         <div className="register-section">
-          <h2>New Here? 💖</h2>
+          <h2>New Here? </h2>
           <p>
             Join KodBank and manage your money beautifully.
           </p>

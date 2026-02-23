@@ -29,7 +29,7 @@ export default function Register() {
 
     setLoading(true);
     try {
-      const res = await fetch('/api/auth/register', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -151,7 +151,7 @@ export default function Register() {
 
         {/* RIGHT SIDE – MESSAGE */}
         <div className="register-section">
-          <h2>Welcome 💖</h2>
+          <h2>Welcome </h2>
           <p>
             Join KodBank and manage your money beautifully.
           </p>
