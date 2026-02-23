@@ -91,8 +91,8 @@ router.post('/login', loginValidation, async (req, res) => {
 
     res.cookie(COOKIE_NAME, token, {
       httpOnly: true,
-      secure: isProd,
-      sameSite: 'lax',
+      secure: true,
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000,
       path: '/',
     });
